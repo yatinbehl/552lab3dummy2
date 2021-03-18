@@ -102,6 +102,7 @@ diverge_gender <- read.csv("data/diverge_data.csv")
 head(diverge_gender)
 
 x <- diverge_gender[order(diverge_gender$Average_suicides_per_capita, decreasing = TRUE),]
+y <- x$country
 top_n <- y[1:20]
 diverge_gender_plot <- diverge_gender[diverge_gender$country %in% top_n,]
 

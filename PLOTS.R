@@ -140,12 +140,7 @@ plot4 <- function(countries, gender){
 
 # Sowmya's plot
 plot5 <- function(country_data){
-  data[data$generation=='G.I. Generation',]$generation <- '1.G.I'
-  data[data$generation=='Silent',]$generation <- '2.Silent'
-  data[data$generation=='Boomers',]$generation <- '3.Boomers'
-  data[data$generation=='Generation X',]$generation <- '4.Gen X'
-  data[data$generation=='Millenials',]$generation <- '5.Millenials'
-  data[data$generation=='Generation Z',]$generation <- '6.Gen Z'
+  
   p5 <- ggplot(data = data)+
     aes(x = data$generation,
         y = data$suicides.100k.pop,

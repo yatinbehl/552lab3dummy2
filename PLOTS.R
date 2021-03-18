@@ -35,8 +35,7 @@ names(df)[1] <- "region"
 suicide_data <- read.csv("data/master_HDI.csv")
 
 # Rename the missing countries:
-country_data[country_data$region == "Russian Federation",]$region <- "Russia"
-
+country_data$region[country_data$region == "Russian Federation"] <- "Russia"
 # Create a merged data set:
 suicide_df <- left_join(df, country_data, by= "region")
 

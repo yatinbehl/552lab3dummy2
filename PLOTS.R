@@ -5,7 +5,7 @@ library(plotly)
 library(dplyr)
 library(ggthemes)
 library(dplyr)
-library(gghighlight)
+
 #install.packages("gghighlight")
 
 # Read the required data set:

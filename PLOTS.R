@@ -10,7 +10,7 @@ library(gghighlight)
 #install.packages("gghighlight")
 
 # Read the required data set:
-data <- read.csv("/Users/yatinbehl/Documents/block5/Data551/lab3/dashboard-project---r-data551_g5/PLOTS_DATA/data/master.csv")
+data <- read.csv("data/master.csv")
 
 # Reaname the column as country:
 names(data)[1] <- 'country'
@@ -32,7 +32,7 @@ df <- read.csv('https://raw.githubusercontent.com/plotly/datasets/master/2014_wo
 names(df)[1] <- "region"
 
 # Read the required suicide dataset:
-suicide_data <- read.csv("/Users/yatinbehl/Documents/block5/Data551/lab3/dashboard-project---r-data551_g5/PLOTS_DATA/data/master_HDI.csv")
+suicide_data <- read.csv("data/master_HDI.csv")
 
 #setdiff(country_data$region, df$region)
 
@@ -74,7 +74,7 @@ plot1 <- function(){
 
 
 # Yatin's Graph:
-plot1_data<- read.csv("/Users/yatinbehl/Documents/block5/Data551/lab3/dashboard-project---r-data551_g5/PLOTS_DATA/data/line_data.csv")
+plot1_data<- read.csv("data/line_data.csv")
 plot1_data$year <- as.Date(plot1_data$year,format="%Y")
 plot1_data$age <- as.factor(plot1_data$age)
 head(plot1_data)
@@ -99,7 +99,7 @@ plot2 <- function(age, country){
 
 
 # Poojitha's Graph:
-diverge_gender <- read.csv("/Users/yatinbehl/Documents/block5/Data551/lab3/dashboard-project---r-data551_g5/PLOTS_DATA/data/diverge_data.csv")
+diverge_gender <- read.csv("data/diverge_data.csv")
 head(diverge_gender)
 
 x <- diverge_gender[order(diverge_gender$Average_suicides_per_capita, decreasing = TRUE),]

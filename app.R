@@ -10,7 +10,7 @@ library(dplyr)
 
 ####
 
-source("/Users/yatinbehl/Documents/block5/Data551/lab3/dashboard-project---r-data551_g5/PLOTS_DATA/PLOTS.R")
+source("PLOTS.R")
 
 app <- Dash$new(external_stylesheets = dbcThemes$BOOTSTRAP)
 

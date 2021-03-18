@@ -20,7 +20,7 @@ country_data <- data %>%
   summarise(
     suicides_no = mean(suicides_no)
   )
-
+country_data <- as.data.frame(country_data)
 # Rename the columns so that they are helpful for merging:
 names(country_data) <- c("region", "value")
 
@@ -32,8 +32,6 @@ names(df)[1] <- "region"
 
 # Read the required suicide dataset:
 suicide_data <- read.csv("data/master_HDI.csv")
-
-#setdiff(country_data$region, df$region)
 
 # Rename the missing countries:
 country_data[country_data$region == "Russian Federation",]$region <- "Russia"

@@ -3,7 +3,6 @@
 library(ggplot2)
 library(plotly)
 library(dplyr)
-library(ggiraph)
 library(ggthemes)
 library(dplyr)
 library(gghighlight)

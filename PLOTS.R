@@ -141,7 +141,7 @@ plot4 <- function(countries, gender){
 # Sowmya's plot
 plot5 <- function(country_data){
   data[data$generation=='G.I. Generation',]$generation <- '1.G.I'
-  data[data$generation=='Silent',]$generation <- '2.Silent'
+  
   data[data$generation=='Boomers',]$generation <- '3.Boomers'
   data[data$generation=='Generation X',]$generation <- '4.Gen X'
   data[data$generation=='Millenials',]$generation <- '5.Millenials'
